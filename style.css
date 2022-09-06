@@ -14,6 +14,10 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 label {
   font-weight: 500;
   margin-bottom: 5px;
@@ -66,6 +70,11 @@ input[type="text"]:focus {
   cursor: pointer;
   width: 100%;
   border-radius: 5px;
+  box-shadow: 2px 2px 3px rgba(16, 15, 15, 0.2);
+}
+
+.btn:hover {
+  background-color: rgb(19, 123, 123);
 }
 
 .input-field {
@@ -74,12 +83,15 @@ input[type="text"]:focus {
 }
 
 .task-container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin-top: 20px;
 }
 
 .task-container .title {
   margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .task-list {
@@ -97,4 +109,37 @@ input[type="text"]:focus {
   display: flex;
   justify-content: space-between;
   border-radius: 5px;
+}
+
+.delete-item {
+  cursor: pointer;
+}
+
+.delete-item:hover {
+  color: rgb(191, 14, 14);
+}
+
+.clear-tasks {
+  font-weight: 500;
+  margin-top: 8px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.clear-tasks:hover {
+  background-color: rgba(43, 43, 43, 0.995);
+}
+
+.no-task {
+  background-color: rgba(23, 148, 148, 0.205);
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
