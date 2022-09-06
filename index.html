@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b91ff44235.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Task List</title>
+  </head>
+  <body>
+    <section id="main">
+      <div class="container">
+        <form id="task-form">
+          <div class="input-field">
+            <label for="task">New Task</label>
+            <input type="text" name="task" id="task" />
+          </div>
+          <input type="submit" value="Add Task" class="btn" />
+        </form>
+        <div class="tasks">
+          <div class="input-field">
+            <label for="filter">Filter Task</label>
+            <input type="text" name="filter" id="filter" />
+          </div>
+          <div class="task-container">
+            <h3 class="title">Tasks</h3>
+            <ul class="task-list">
+              <li class="task">
+                <span class="task-text">1Oneawew</span>
+                <a href="#"><i class="fa-solid fa-trash-can"></i></a>
+              </li>
+              <li class="task">
+                <span class="task-text">1Oneawew</span>
+                <a href="#"><i class="fa-solid fa-trash-can"></i></a>
+              </li>
+              <li class="task">
+                <span class="task-text">1Oneawew</span>
+                <a href="#"><i class="fa-solid fa-trash-can"></i></a>
+              </li>
+              <li class="task">
+                <span class="task-text">1Oneawew</span>
+                <a href="#"><i class="fa-solid fa-trash-can"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- scripts -->
+    <script src="app.js"></script>
+  </body>
+</html>
